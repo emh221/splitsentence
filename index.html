@@ -9,6 +9,15 @@
 </head>
 <body>
   <div class="container">
-
+    <form id="split">
+      <div class="form group">
+        <label for="sentence"> Enter your Sentence </label>
+        <input type="text" id="sentence">
+      </div>
+      <button type="submit" class="btn btn-success">Click me.</button>
+    </form>
+    <div id="response">
+      Your sentence, with each word longer shorter than three characters eliminated, then reversed:<br><span id="output"></span>
+    </div>
   </div>
 </body>
