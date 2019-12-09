@@ -4,14 +4,7 @@ $(document).ready(function() {
 
     var words = sentence.split(" ");
 
-    var longWords = []
-
-    words.forEach(function(word) {
-      var length = word.length;
-      if (length >= 3) {
-        longWords.push(word);
-      }
-    });
+    var longWords = words.filter(word => word.length > 2)
 
     var reversedLongWords = longWords.reverse();
 
